@@ -76,7 +76,7 @@ s2n = getlink("http://www.siam2nite.com/en/events")
 # Only event not ads or other useless link
 data = []
 onlyevent = event(s2n)
-f = open('D:/Senior Project/web scrapping/text.txt','w')
+f = open('D:/Senior Project/web scrapping/6-8-2015.txt','w')
 onlyevent = remove_duplicates(onlyevent)
 print onlyevent
 for link in onlyevent:
@@ -110,7 +110,7 @@ for x in data:
     # print "TEL:" + str(x[0]).split("'")[1].split("'")[0]
     print "EMAIL:" + mail(str(x[2]))
     f.write("\nEMAIL:" + mail(str(x[2])))
-    print "EMAIL:" + str(x[1]).split('>')[1].split('<')[0]
+    # print "EMAIL:" + str(x[1]).split('>')[1].split('<')[0]
 
 
 
